@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.487c7bca.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW</title>
+    <script type="module" crossorigin src="/assets/index.22944fc1.js"></script>
+    <link rel="stylesheet" href="/assets/index.402ae204.css">
+  </head>
+  <body class=" container">
+    <nav class="navbar navnav navbar-expand-lg bg-body-tertiary my-3">
+      <div class="container-fluid">
+        <img src="/assets/logo.487c7bca.svg" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-5 mb-2 gap-4 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Models</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Discover</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <section class=" container ">
+      <div class="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between">
+        <div class="col-lg-6 col-12">
+          <h3 class=" text-uppercase text-primary let-space">The BMW X6:ALL HiLight</h3>
+          <h1 class=" fw-bold fs-1 my-4 helo">THE X6 M50i</h1>
+          <button class=" btn btn-primary text-white mt-5 fs-5 px-4 py-3">Configuration and Pricing</button>
+        </div>
+        <div class="col-lg-5 col-12 text-center w-auto">
+          <img src="/assets/car1.19473664.png" id="car">
+        </div>
+        <div class="col-lg-1 col-0"></div>
+      </div>
+      <div class=" bottom d-block text-center mx-auto">
+        <img src="/assets/car1.19473664.png" onclick="myCArs(this.src)" >
+        <img src="/assets/car2.e1b462dd.png" onclick="myCArs(this.src)">
+        <img src="/assets/car3.259424b9.png" onclick="myCArs(this.src)">
+        <img src="/assets/car4.fec6e9e3.png" onclick="myCArs(this.src)">
+      </div>
+    </section>
+
+    
+    <script>
+      const car = document.getElementById('car');
+      const myCArs = (carrr) => {
+        car.src = carrr;
+      }
+    </script>
+  </body>
+</html>
